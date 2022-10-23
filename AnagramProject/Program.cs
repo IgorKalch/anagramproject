@@ -10,7 +10,7 @@ namespace AnagramProject
     {
         static void Main(string[] args)
         {
-            string wordToReverse = "A!b Cde#f  ewrff    jk";
+            string wordToReverse = "A#bc  dfff!$ f#df";
 
             Anagram anagram = new Anagram();
 

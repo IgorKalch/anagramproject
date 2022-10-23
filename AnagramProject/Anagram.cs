@@ -9,7 +9,7 @@ namespace AnagramProject
 {
     public class Anagram
     {
-        string ReverseSingleWord(string data)
+        public string ReverseSingleWord(string data)
         {
             if (string.IsNullOrEmpty(data))
             {
