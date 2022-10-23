@@ -1,0 +1,8 @@
+C:\Users\i.kalchenko\source\repos\anagramproject\AnagramProject\obj\Debug\AnagramProject.csproj.AssemblyReference.cache
+C:\Users\i.kalchenko\source\repos\anagramproject\AnagramProject\obj\Debug\AnagramProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\i.kalchenko\source\repos\anagramproject\AnagramProject\obj\Debug\AnagramProject.csproj.CoreCompileInputs.cache
+C:\Users\i.kalchenko\source\repos\anagramproject\AnagramProject\bin\Debug\AnagramProject.exe.config
+C:\Users\i.kalchenko\source\repos\anagramproject\AnagramProject\bin\Debug\AnagramProject.exe
+C:\Users\i.kalchenko\source\repos\anagramproject\AnagramProject\bin\Debug\AnagramProject.pdb
+C:\Users\i.kalchenko\source\repos\anagramproject\AnagramProject\obj\Debug\AnagramProject.exe
+C:\Users\i.kalchenko\source\repos\anagramproject\AnagramProject\obj\Debug\AnagramProject.pdb
