@@ -1,11 +1,12 @@
-\AnagramLibrary\bin/*/*
-\AnagramLibrary\obj/*/*/*/*
-\AnagramProject\bin/*/*
-\AnagramProject\obj/*/*/*/*
-\AnagramProject\.vs/*/*/*/*
-\AnagramProject\TestResults/*/*/*/*
-\AnagramProject\packages/*/*/*/*
-\AnagramTest\bin/*/*
-\AnagramTest\obj/*/*/*/*
-.git/*/*/*/*
+\AnagramLibrary\bin/
+\AnagramLibrary\obj/
+\AnagramProject\bin/
+\AnagramProject\obj/
+\AnagramProject\.vs/
+\AnagramProject\TestResults/
+\AnagramProject\packages/
+\AnagramTest\bin/
+\AnagramTest\obj/
+.git/
+.vs/
 
