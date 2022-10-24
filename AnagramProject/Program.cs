@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AnagramLibrary;
 
 namespace AnagramProject
 {
-    internal class Program
+    public class Program
     {
-        static void Main(string[] args)
+       static void Main(string[] args)
         {
             string wordToReverse = "A#bc  dfff!$ f#df";
 

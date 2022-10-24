@@ -1,0 +1,6 @@
+C:\Users\i.kalchenko\source\repos\anagramproject\AnagramLibrary\bin\Debug\AnagramLibrary.dll
+C:\Users\i.kalchenko\source\repos\anagramproject\AnagramLibrary\bin\Debug\AnagramLibrary.pdb
+C:\Users\i.kalchenko\source\repos\anagramproject\AnagramLibrary\obj\Debug\AnagramLibrary.csproj.AssemblyReference.cache
+C:\Users\i.kalchenko\source\repos\anagramproject\AnagramLibrary\obj\Debug\AnagramLibrary.csproj.CoreCompileInputs.cache
+C:\Users\i.kalchenko\source\repos\anagramproject\AnagramLibrary\obj\Debug\AnagramLibrary.dll
+C:\Users\i.kalchenko\source\repos\anagramproject\AnagramLibrary\obj\Debug\AnagramLibrary.pdb

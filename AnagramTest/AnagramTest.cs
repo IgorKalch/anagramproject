@@ -1,11 +1,11 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using AnagramProject;
+using AnagramLibrary;
 
 namespace AnagramTest
 {
     [TestClass]
-    public class AnagramTests
+    public class AnagramTest
     {
         [TestMethod]
         public void ReverseSingleWordTest()
