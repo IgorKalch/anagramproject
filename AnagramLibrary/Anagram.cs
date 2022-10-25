@@ -12,30 +12,27 @@ namespace AnagramLibrary
         public string ReverseSingleWord(string data)
         {
             if (string.IsNullOrEmpty(data))
-            {
-                throw new ArgumentNullException(nameof(data));
-            }
+                return data;
 
             char[] charArray = data.ToCharArray();
-            int lenFromBeginOfString = data.Length - 1;
-            int lenFromEndOfString = 0;
+            int lenFromEndOfString = data.Length - 1;
+            int lenFromBeginOfString = 0;
 
-            while (lenFromEndOfString < lenFromBeginOfString)
+            while (lenFromBeginOfString < lenFromEndOfString)
             {
-                // Ignore special characters
-                if (!char.IsLetter(charArray[lenFromEndOfString]))
-                    lenFromEndOfString++;
-                else if (!char.IsLetter(charArray[lenFromBeginOfString]))
-                    lenFromBeginOfString--;
+                if (!char.IsLetter(charArray[lenFromBeginOfString]))
+                    lenFromBeginOfString++;
 
-                // Both charArray[lenFromEndOfString] and charArray[lenFromBeginOfString]) are not spacial
+                else if (!char.IsLetter(charArray[lenFromEndOfString]))
+                    lenFromEndOfString--;
+
                 else
                 {
-                    char tmp = charArray[lenFromEndOfString];
-                    charArray[lenFromEndOfString] = charArray[lenFromBeginOfString];
-                    charArray[lenFromBeginOfString] = tmp;
-                    lenFromEndOfString++;
-                    lenFromBeginOfString--;
+                    char tmp = charArray[lenFromBeginOfString];
+                    charArray[lenFromBeginOfString] = charArray[lenFromEndOfString];
+                    charArray[lenFromEndOfString] = tmp;
+                    lenFromBeginOfString++;
+                    lenFromEndOfString--;
                 }
             }
             return new string(charArray);
@@ -44,9 +41,8 @@ namespace AnagramLibrary
         public string ReverseString(string data)
         {
             if (string.IsNullOrEmpty(data))
-            {
-                throw new ArgumentNullException(nameof(data));
-            }
+                return data;
+
             string[] subs = Regex.Split(data, @"(?<=[\s])");
             string concatRevsrsedString = "";
 

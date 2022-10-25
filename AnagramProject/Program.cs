@@ -11,11 +11,18 @@ namespace AnagramProject
     {
        static void Main(string[] args)
         {
-            string wordToReverse = "A#bc  dfff!$ f#df";
-
             Anagram anagram = new Anagram();
 
-            Console.WriteLine(anagram.ReverseString(wordToReverse));
+            Console.WriteLine("Please enter the string that should be anagrammed and press enter\n");
+            string wordToReverse = Console.ReadLine();
+
+            if(string.IsNullOrEmpty(wordToReverse))
+                Console.WriteLine("Your's string is empty");
+            else
+            {
+                Console.WriteLine($"Your's string: {wordToReverse}\n");
+                Console.WriteLine($"Anagram: {anagram.ReverseString(wordToReverse)}\n");
+            }
 
             Console.ReadLine();
         }
