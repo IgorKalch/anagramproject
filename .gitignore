@@ -9,3 +9,11 @@
 \AnagramTest\obj/*
 .git/*
 .vs/*
+/AnagramLibrary/obj/Debug
+/AnagramProject/.vs/AnagramProject/FileContentIndex
+/AnagramTest/obj/Debug
+/AnagramProject/obj/Debug
+.gitignore
+/AnagramProject/.vs/AnagramProject/v17
+/AnagramLibrary/obj/Release
+/AnagramLibrary/.vs
