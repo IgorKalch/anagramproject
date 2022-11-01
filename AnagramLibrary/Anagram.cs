@@ -16,20 +16,24 @@ namespace AnagramLibrary
 
             foreach (string sub in subs)
             {
-                int lenFromEndOfString = sub.Length - 1;
+                concatRevsrsedString += ReverseSingleWord(sub);
+            }
+            return concatRevsrsedString;
+
+           string ReverseSingleWord(string word)
+            {
+                char[] charArray = word.ToCharArray();
+                int lenFromEndOfString = word.Length - 1;
                 int lenFromBeginOfString = 0;
-                char[] charArray = sub.ToCharArray();
 
                 while (lenFromBeginOfString < lenFromEndOfString)
                 {
                     if (!char.IsLetter(charArray[lenFromBeginOfString]))
-                    {
                         lenFromBeginOfString++;
-                    }
+
                     else if (!char.IsLetter(charArray[lenFromEndOfString]))
-                    {
                         lenFromEndOfString--;
-                    }
+
                     else
                     {
                         char tmp = charArray[lenFromBeginOfString];
@@ -39,9 +43,9 @@ namespace AnagramLibrary
                         lenFromEndOfString--;
                     }
                 }
-                concatRevsrsedString += new string(charArray);
-            }
-            return concatRevsrsedString;
+                return new string(charArray);
+            }            
+            
         }
     }
 }
