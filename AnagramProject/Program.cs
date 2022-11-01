@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Reflection;
+using System.Resources;
 using AnagramLibrary;
 
 namespace AnagramProject
@@ -12,17 +10,22 @@ namespace AnagramProject
        static void Main(string[] args)
         {
             Anagram anagram = new Anagram();
+            ResourceManager rm = new ResourceManager("AnagramProject.Resources.ResourceEn", Assembly.GetExecutingAssembly());
 
-            Console.WriteLine("Please enter the string that should be anagrammed and press enter\n");
+            Console.WriteLine(rm.GetString("greeting"));
+            Console.WriteLine(rm.GetString("queryToEnterText"));
             string wordToReverse = Console.ReadLine();
 
-            if(string.IsNullOrEmpty(wordToReverse))
-                Console.WriteLine("Your's string is empty");
+            if (string.IsNullOrEmpty(wordToReverse))
+            {
+                Console.WriteLine(rm.GetString("emptyString"));
+            }
             else
             {
-                Console.WriteLine($"Your's string: {wordToReverse}\n");
-                Console.WriteLine($"Anagram: {anagram.ReverseString(wordToReverse)}\n");
-            }
+                Console.WriteLine($"{rm.GetString("enteredString")}{wordToReverse}");
+                Console.WriteLine($"{rm.GetString("result")}{anagram.ReverseString(wordToReverse)}");
+
+            }                        
 
             Console.ReadLine();
         }

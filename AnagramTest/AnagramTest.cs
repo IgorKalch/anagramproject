@@ -35,7 +35,7 @@ namespace AnagramTest
 
         [TestMethod]
         [DataRow("\t\tabc\t\tabc\t\t", "\t\tcba\t\tcba\t\t")]
-        [DataRow(" abc\nabc\t\t", " cba\ncba\t\t")]
+        [DataRow(" abc abc abc", " cba cba cba")]
         [DataRow(" abc\nabc\t\t", " cba\ncba\t\t")]
         public void ReverseStringTest_Reverse_WhitespacesKeepTheSameCountAndPosition(string initial, string expected)
         {
@@ -43,7 +43,7 @@ namespace AnagramTest
             Assert.AreEqual(result, expected);
         }
 
-        [TestMethod]
+        [TestMethod]        
         [DataRow("", "")]
         [DataRow(null, "")]
         public void ReverseStringTest_Reverse_NullOrEmptyTextAreAccepted(string initial, string expected)

@@ -7,7 +7,9 @@ namespace AnagramLibrary
         public string ReverseString(string data)
         {
             if (string.IsNullOrEmpty(data))
-                return data;
+            {
+                return string.Empty; 
+            }
 
             string[] subs = Regex.Split(data, @"(?<=[\s])");
             string concatRevsrsedString = "";
@@ -21,11 +23,13 @@ namespace AnagramLibrary
                 while (lenFromBeginOfString < lenFromEndOfString)
                 {
                     if (!char.IsLetter(charArray[lenFromBeginOfString]))
+                    {
                         lenFromBeginOfString++;
-
+                    }
                     else if (!char.IsLetter(charArray[lenFromEndOfString]))
+                    {
                         lenFromEndOfString--;
-
+                    }
                     else
                     {
                         char tmp = charArray[lenFromBeginOfString];
