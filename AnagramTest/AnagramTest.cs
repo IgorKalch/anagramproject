@@ -13,7 +13,7 @@ namespace AnagramTest
         [DataRow("abc", "cba")]
         public void ReverseStringTest_Reverse_AllSymbolsWillPermut(string initial, string expected)
         {
-            var result = anagram.ReverseString(initial);
+            var result = anagram.Reverse(initial);
             Assert.AreEqual(result, expected);
         }
 
@@ -21,7 +21,7 @@ namespace AnagramTest
         [DataRow("1234", "1234")]
         public void ReverseStringTest_Reverse_AllSymbolsStayOnTheSamePosition(string initial, string expected)
         {
-            var result = anagram.ReverseString(initial);
+            var result = anagram.Reverse(initial);
             Assert.AreEqual(result, expected);
         }
 
@@ -29,7 +29,7 @@ namespace AnagramTest
         [DataRow("abc!+!abc", "cba!+!cba")]
         public void ReverseStringTest_Reverse_WordWithMixedSymbols(string initial, string expected)
         {
-            var result = anagram.ReverseString(initial);
+            var result = anagram.Reverse(initial);
             Assert.AreEqual(result, expected);
         }
 
@@ -39,7 +39,7 @@ namespace AnagramTest
         [DataRow(" abc\nabc\t\t", " cba\ncba\t\t")]
         public void ReverseStringTest_Reverse_WhitespacesKeepTheSameCountAndPosition(string initial, string expected)
         {
-            var result = anagram.ReverseString(initial);
+            var result = anagram.Reverse(initial);
             Assert.AreEqual(result, expected);
         }
 
@@ -48,7 +48,7 @@ namespace AnagramTest
         [DataRow(null, "")]
         public void ReverseStringTest_Reverse_NullOrEmptyTextAreAccepted(string initial, string expected)
         {
-            var result = anagram.ReverseString(initial);
+            var result = anagram.Reverse(initial);
             Assert.AreEqual(result, expected);
         }
 
@@ -59,7 +59,7 @@ namespace AnagramTest
         [DataRow(" a1bcd efg!h", " d1cba hgf!e")]
         public void ReverseStringTest_QuickTest(string initial, string expected)
         {
-            var result = anagram.ReverseString(initial);
+            var result = anagram.Reverse(initial);
             Assert.AreEqual(result, expected);
         }
     }

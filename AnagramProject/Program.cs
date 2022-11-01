@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Reflection;
-using System.Resources;
 using AnagramLibrary;
+using AnagramProject.Properties;
+using System.Globalization;
 
 namespace AnagramProject
 {
@@ -10,20 +10,19 @@ namespace AnagramProject
        static void Main(string[] args)
         {
             Anagram anagram = new Anagram();
-            ResourceManager rm = new ResourceManager("AnagramProject.Resources.ResourceEn", Assembly.GetExecutingAssembly());
 
-            Console.WriteLine(rm.GetString("greeting"));
-            Console.WriteLine(rm.GetString("queryToEnterText"));
+            Console.WriteLine(Resources.greeting);
+            Console.WriteLine(Resources.queryToEnterText);
             string wordToReverse = Console.ReadLine();
 
             if (string.IsNullOrEmpty(wordToReverse))
             {
-                Console.WriteLine(rm.GetString("emptyString"));
+                Console.WriteLine(Resources.emptyString);
             }
             else
             {
-                Console.WriteLine($"{rm.GetString("enteredString")}{wordToReverse}");
-                Console.WriteLine($"{rm.GetString("result")}{anagram.ReverseString(wordToReverse)}");
+                Console.WriteLine($"{Resources.enteredString}{wordToReverse}");
+                Console.WriteLine($"{Resources.result}{anagram.Reverse(wordToReverse)}");
 
             }                        
 

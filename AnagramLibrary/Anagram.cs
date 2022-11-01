@@ -4,11 +4,11 @@ namespace AnagramLibrary
 {
     public class Anagram
     {
-        public string ReverseString(string data)
+        public string Reverse(string data)
         {
             if (string.IsNullOrEmpty(data))
             {
-                return string.Empty; 
+                return string.Empty;
             }
 
             string[] subs = Regex.Split(data, @"(?<=[\s])");
@@ -16,32 +16,32 @@ namespace AnagramLibrary
 
             foreach (string sub in subs)
             {
-                int lenFromEndOfString = sub.Length - 1;
-                int lenFromBeginOfString = 0;
-                char[] charArray = sub.ToCharArray();
-
-                while (lenFromBeginOfString < lenFromEndOfString)
-                {
-                    if (!char.IsLetter(charArray[lenFromBeginOfString]))
-                    {
-                        lenFromBeginOfString++;
-                    }
-                    else if (!char.IsLetter(charArray[lenFromEndOfString]))
-                    {
-                        lenFromEndOfString--;
-                    }
-                    else
-                    {
-                        char tmp = charArray[lenFromBeginOfString];
-                        charArray[lenFromBeginOfString] = charArray[lenFromEndOfString];
-                        charArray[lenFromEndOfString] = tmp;
-                        lenFromBeginOfString++;
-                        lenFromEndOfString--;
-                    }
-                }
-                concatRevsrsedString += new string(charArray);
+                concatRevsrsedString += ReverseWord(sub);
             }
             return concatRevsrsedString;
+
+        }
+        string ReverseWord(string word)
+        {
+            char[] charArray = word.ToCharArray();
+            int lenFromEndOfString = word.Length - 1;
+            int lenFromBeginOfString = 0;
+
+            while (lenFromBeginOfString < lenFromEndOfString)
+            {
+                if (!char.IsLetter(charArray[lenFromBeginOfString]))  {
+                    lenFromBeginOfString++;
+                }  else if (!char.IsLetter(charArray[lenFromEndOfString]))  { 
+                    lenFromEndOfString--; 
+                } else {
+                    char tmp = charArray[lenFromBeginOfString];
+                    charArray[lenFromBeginOfString] = charArray[lenFromEndOfString];
+                    charArray[lenFromEndOfString] = tmp;
+                    lenFromBeginOfString++;
+                    lenFromEndOfString--;
+                }
+            }
+            return new string(charArray);
         }
     }
 }
