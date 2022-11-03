@@ -118,21 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="emptyString" xml:space="preserve">
-    <value>Su cadena está vacía</value>
-  </data>
-  <data name="enteredString" xml:space="preserve">
-    <value>
-Tu cuerda:</value>
+    <value>Ваш рядок порожній</value>
   </data>
   <data name="greeting" xml:space="preserve">
-    <value>La aplicación "Anagrama". Puede invertir cada palabra en la línea de entrada. Derechos de autor 2022</value>
+    <value>Додаток "Анаграма". Ви можете обернути кожне слово у вхідному рядку. Copyright 2022</value>
   </data>
   <data name="queryToEnterText" xml:space="preserve">
-    <value>Por favor, introduzca la cadena que debe ser anagramada y pulse intro
-</value>
+    <value>Будь ласка, введіть рядок, який потрібно обернути та натисніть клавішу Enter</value>
   </data>
   <data name="result" xml:space="preserve">
-    <value>
-Anagrama:</value>
+    <value>Анаграма:</value>
   </data>
 </root>

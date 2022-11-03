@@ -19,8 +19,8 @@ namespace AnagramLibrary
                 concatRevsrsedString += ReverseWord(sub);
             }
             return concatRevsrsedString;
-
         }
+
         private string ReverseWord(string word)
         {
             char[] charArray = word.ToCharArray();

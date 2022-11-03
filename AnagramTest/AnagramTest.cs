@@ -45,9 +45,21 @@ namespace AnagramTest
 
         [TestMethod]        
         [DataRow("", "")]
-        [DataRow(null, "")]
-        public void ReverseStringTest_Reverse_NullOrEmptyTextAreAccepted(string initial, string expected)
+        [DataRow("q", "q")]
+        public void ReverseStringTest_Reverse_EmptyTextAreAccepted(string initial, string expected)
         {
+            var result = anagram.Reverse(initial);
+            Assert.AreEqual(result, expected);
+        }
+
+        [TestMethod]
+        public void ReverseStringTest_Reverse_NullTextAreAccepted()
+        {
+            // Arrange
+            string initial = null;
+            string expected = "";
+
+            // Assert
             var result = anagram.Reverse(initial);
             Assert.AreEqual(result, expected);
         }

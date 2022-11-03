@@ -15,17 +15,12 @@ namespace AnagramProject
             Console.WriteLine(Resources.queryToEnterText);
             string wordToReverse = Console.ReadLine();
 
-            if (string.IsNullOrEmpty(wordToReverse))
+            string result = Resources.emptyString;
+            if (!string.IsNullOrEmpty(wordToReverse))
             {
-                Console.WriteLine(Resources.emptyString);
+                result = $"{Resources.result}{anagram.Reverse(wordToReverse)}";
             }
-            else
-            {
-                Console.WriteLine($"{Resources.enteredString}{wordToReverse}");
-                Console.WriteLine($"{Resources.result}{anagram.Reverse(wordToReverse)}");
-
-            }                        
-
+            Console.WriteLine(result);
             Console.ReadLine();
         }
     }

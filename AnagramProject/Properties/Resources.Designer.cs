@@ -70,16 +70,6 @@ namespace AnagramProject.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 
-        ///Your&apos;s string:.
-        /// </summary>
-        internal static string enteredString {
-            get {
-                return ResourceManager.GetString("enteredString", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to The application &quot;Anagram&quot;. You can reverse each word in the input line. Copyright 2022
         ///.
         /// </summary>

@@ -120,10 +120,6 @@
   <data name="emptyString" xml:space="preserve">
     <value>Your's string is empty</value>
   </data>
-  <data name="enteredString" xml:space="preserve">
-    <value>
-Your's string:</value>
-  </data>
   <data name="greeting" xml:space="preserve">
     <value>The application "Anagram". You can reverse each word in the input line. Copyright 2022
 </value>
