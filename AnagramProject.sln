@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnagramProject", "..\anagramproject\\AnagramProject\AnagramProject.csproj", "{E639E5FF-E7AB-4304-8EFF-D410EA8A958C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnagramProject", "..\anagramproject\AnagramProject\AnagramProject.csproj", "{E639E5FF-E7AB-4304-8EFF-D410EA8A958C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnagramLibraryTest", "..\anagramproject\\AnagramTest\AnagramLibraryTest.csproj", "{CE2736B1-F332-4427-A4C2-45288C1FFB4C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnagramLibraryTest", "..\anagramproject\AnagramTest\AnagramLibraryTest.csproj", "{CE2736B1-F332-4427-A4C2-45288C1FFB4C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnagramLibrary", "..\anagramproject\AnagramLibrary\AnagramLibrary.csproj", "{7CBF5108-B698-4A9A-A1DE-741B9DA91278}"
 EndProject
