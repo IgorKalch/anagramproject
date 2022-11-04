@@ -11,7 +11,7 @@ namespace AnagramTest
 
         [TestMethod]
         [DataRow("abc", "cba")]
-        public void ReverseStringTest_Reverse_AllSymbolsWillPermut(string initial, string expected)
+        public void Reverse_AllSymbolsWillPermut(string initial, string expected)
         {
             var result = anagram.Reverse(initial);
             Assert.AreEqual(result, expected);
@@ -19,7 +19,7 @@ namespace AnagramTest
 
         [TestMethod]
         [DataRow("1234", "1234")]
-        public void ReverseStringTest_Reverse_AllSymbolsStayOnTheSamePosition(string initial, string expected)
+        public void Reverse_AllSymbolsStayOnTheSamePosition(string initial, string expected)
         {
             var result = anagram.Reverse(initial);
             Assert.AreEqual(result, expected);
@@ -27,17 +27,17 @@ namespace AnagramTest
 
         [TestMethod]
         [DataRow("abc!+!abc", "cba!+!cba")]
-        public void ReverseStringTest_Reverse_WordWithMixedSymbols(string initial, string expected)
+        public void Reverse_WordWithMixedSymbols(string initial, string expected)
         {
             var result = anagram.Reverse(initial);
             Assert.AreEqual(result, expected);
         }
 
         [TestMethod]
-        [DataRow("\t\tabc\t\tabc\t\t", "\t\tcba\t\tcba\t\t")]
-        [DataRow(" abc abc abc", " cba cba cba")]
-        [DataRow(" abc\nabc\t\t", " cba\ncba\t\t")]
-        public void ReverseStringTest_Reverse_WhitespacesKeepTheSameCountAndPosition(string initial, string expected)
+        [DataRow("\tabc\t\tabc\t\t\tabc\t\t\t\t", "\tcba\t\tcba\t\t\tcba\t\t\t\t")]
+        [DataRow(" abc  abc   abc    abc     ", " cba  cba   cba    cba     ")]
+        [DataRow(" abc\nabc\t\t\t\t\t", " cba\ncba\t\t\t\t\t")]
+        public void Reverse_WhitespacesKeepTheSameCountAndPosition(string initial, string expected)
         {
             var result = anagram.Reverse(initial);
             Assert.AreEqual(result, expected);
@@ -45,15 +45,14 @@ namespace AnagramTest
 
         [TestMethod]        
         [DataRow("", "")]
-        [DataRow("q", "q")]
-        public void ReverseStringTest_Reverse_EmptyTextAreAccepted(string initial, string expected)
+        public void Reverse_EmptyTextAreAccepted(string initial, string expected)
         {
             var result = anagram.Reverse(initial);
             Assert.AreEqual(result, expected);
         }
 
         [TestMethod]
-        public void ReverseStringTest_Reverse_NullTextAreAccepted()
+        public void Reverse_NullTextAreAccepted()
         {
             // Arrange
             string initial = null;
@@ -69,7 +68,7 @@ namespace AnagramTest
         [DataRow("Test", "tseT")]
         [DataRow("a1bcd efg!h", "d1cba hgf!e")]
         [DataRow(" a1bcd efg!h", " d1cba hgf!e")]
-        public void ReverseStringTest_QuickTest(string initial, string expected)
+        public void Reverse_QuickTest(string initial, string expected)
         {
             var result = anagram.Reverse(initial);
             Assert.AreEqual(result, expected);

@@ -21,14 +21,16 @@
 #/AnagramProject/Properties
 /AnagramProject/*.sln
 
-###AnagramTest###
+###AnagramLibraryTest###
 
-/AnagramTest/bin/*
-/AnagramTest/obj/*
-/AnagramTest/obj/Debug
-#/AnagramTest/Properties
-#/AnagramTest/packages.config
+/AnagramLibraryTest/bin/*
+/AnagramLibraryTest/obj/*
+/AnagramLibraryTest/obj/Debug
+#/AnagramLibraryTest/Properties
+#/AnagramLibraryTest/packages.config
 
+packages/*
+TestResults/*
 .git/*
 .vs/*
 #*.sln

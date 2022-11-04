@@ -117,19 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="emptyString" xml:space="preserve">
+  <data name="EmptyString" xml:space="preserve">
     <value>Your's string is empty</value>
   </data>
-  <data name="greeting" xml:space="preserve">
+  <data name="Greeting" xml:space="preserve">
     <value>The application "Anagram". You can reverse each word in the input line. Copyright 2022
 </value>
   </data>
-  <data name="queryToEnterText" xml:space="preserve">
+  <data name="QueryToEnterText" xml:space="preserve">
     <value>Please enter the string that should be anagrammed and press enter
 </value>
   </data>
-  <data name="result" xml:space="preserve">
-    <value>
-Anagram:</value>
+  <data name="Result" xml:space="preserve">
+    <value>"Reversed string: '{0}'"</value>
   </data>
 </root>

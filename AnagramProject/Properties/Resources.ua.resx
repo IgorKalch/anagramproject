@@ -117,16 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="emptyString" xml:space="preserve">
+  <data name="EmptyString" xml:space="preserve">
     <value>Ваш рядок порожній</value>
   </data>
-  <data name="greeting" xml:space="preserve">
+  <data name="Greeting" xml:space="preserve">
     <value>Додаток "Анаграма". Ви можете обернути кожне слово у вхідному рядку. Copyright 2022</value>
   </data>
-  <data name="queryToEnterText" xml:space="preserve">
+  <data name="QueryToEnterText" xml:space="preserve">
     <value>Будь ласка, введіть рядок, який потрібно обернути та натисніть клавішу Enter</value>
   </data>
-  <data name="result" xml:space="preserve">
-    <value>Анаграма:</value>
+  <data name="Result" xml:space="preserve">
+    <value>"Перевернутий рядок: '{0}'"</value>
   </data>
 </root>

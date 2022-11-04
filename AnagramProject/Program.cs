@@ -11,14 +11,14 @@ namespace AnagramProject
         {
             Anagram anagram = new Anagram();
 
-            Console.WriteLine(Resources.greeting);
-            Console.WriteLine(Resources.queryToEnterText);
+            Console.WriteLine(Resources.Greeting);
+            Console.WriteLine(Resources.QueryToEnterText);
             string wordToReverse = Console.ReadLine();
 
-            string result = Resources.emptyString;
+            string result = Resources.EmptyString;
             if (!string.IsNullOrEmpty(wordToReverse))
             {
-                result = $"{Resources.result}{anagram.Reverse(wordToReverse)}";
+                result = string.Format(Resources.Result, anagram.Reverse(wordToReverse));
             }
             Console.WriteLine(result);
             Console.ReadLine();

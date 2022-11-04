@@ -63,9 +63,9 @@ namespace AnagramProject.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Your&apos;s string is empty.
         /// </summary>
-        internal static string emptyString {
+        internal static string EmptyString {
             get {
-                return ResourceManager.GetString("emptyString", resourceCulture);
+                return ResourceManager.GetString("EmptyString", resourceCulture);
             }
         }
         
@@ -73,9 +73,9 @@ namespace AnagramProject.Properties {
         ///   Looks up a localized string similar to The application &quot;Anagram&quot;. You can reverse each word in the input line. Copyright 2022
         ///.
         /// </summary>
-        internal static string greeting {
+        internal static string Greeting {
             get {
-                return ResourceManager.GetString("greeting", resourceCulture);
+                return ResourceManager.GetString("Greeting", resourceCulture);
             }
         }
         
@@ -83,19 +83,18 @@ namespace AnagramProject.Properties {
         ///   Looks up a localized string similar to Please enter the string that should be anagrammed and press enter
         ///.
         /// </summary>
-        internal static string queryToEnterText {
+        internal static string QueryToEnterText {
             get {
-                return ResourceManager.GetString("queryToEnterText", resourceCulture);
+                return ResourceManager.GetString("QueryToEnterText", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 
-        ///Anagram:.
+        ///   Looks up a localized string similar to &quot;Reversed string: &apos;{0}&apos;&quot;.
         /// </summary>
-        internal static string result {
+        internal static string Result {
             get {
-                return ResourceManager.GetString("result", resourceCulture);
+                return ResourceManager.GetString("Result", resourceCulture);
             }
         }
     }
